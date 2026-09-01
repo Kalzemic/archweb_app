@@ -1,0 +1,213 @@
+.navbar {
+    position: fixed;
+    top: 3%;
+    /* right: 10%; */
+    width: 80%;
+    height: 90px;
+    padding: 1px 20px;
+    z-index: 1000;
+    border-radius: 20px;
+    opacity: 0;
+    animation: fadeIn 0.8s ease-in 0.8s forwards;
+    overflow-x: auto;
+    overflow-y: hidden;
+    background-color: rgba(0,0,0,0);
+    background: linear-gradient(
+        to right,
+        rgba(117, 203, 246, 0),
+        rgba(120, 94, 237, 0)
+      );
+    
+      transition: all 1s ease-in-out;
+
+}
+
+.navbar.scrolled{
+    /* opacity: 1; */
+    background-color: rgba(0, 0, 0, 0);
+    background:linear-gradient(to right, rgba(117, 203, 246, 0.6), rgba(120, 94, 237, 0.6));
+    outline-style: solid;
+    outline-width: 3px;
+    outline-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px) brightness(0.7);
+    /* backdrop-filter: blur(10px) brightness(0.7); */
+}
+
+
+
+
+.navbar-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    position: relative;
+    padding: 0 16px;
+}
+
+/* Center the UL using absolute positioning trick */
+.navbar-center {
+    position: absolute;
+
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.navbar-center ul {
+    justify-content: center;
+    display: flex;
+    gap: 50px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-center li {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-center a {
+    justify-content: center;
+
+}
+
+.navbar-left {
+    display:flex;
+    margin-right: 10%;
+    justify-content: center;
+}
+
+.navbar-left .logo {
+    
+    height: 80px;
+    object-fit: contain;
+    /* margin-left: 10px;*/
+    margin-top: 5px;
+    border-radius: 200px;
+
+}
+
+@media (max-width: 1000px) {
+    .navbar-left .logo {
+        height: 70px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .navbar {
+        height: 80px;
+        padding: 0 12px;
+
+    }
+}
+
+
+.navbar a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Secular One';
+    display: inline-block;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+    padding: 10px 15px;
+}
+
+.navbar a:hover {
+    transform: scale(1.2);
+
+}
+
+.contact-button {
+    background-color: rgba(90, 62, 54, 0.4);
+    border-radius: 10px;
+}
+
+.contact-button:hover {
+    animation: colorSwitch ease-in-out 1s;
+    background: linear-gradient(to left, rgba(246, 192, 117, 0.6), rgba(196, 94, 237, 0.6));
+}
+
+@keyframes colorSwitch {
+    from {
+        background-color: rgba(154, 127, 54, 0.4);
+    }
+
+    to {
+        background: linear-gradient(to right, rgba(246, 192, 117, 0.6), rgba(196, 94, 237, 0.6));
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Keep your existing styles */
+
+/* Hide hamburger and sidebar by default */
+.hamburger-menu {
+    display: none;
+    font-size: 32px;
+    cursor: pointer;
+    color: white;
+    padding: 10px;
+}
+
+/* Sidebar default hidden */
+.sidebar {
+    position: fixed;
+    top: 80px;
+    /* adjust to match navbar height */
+    right: 0;
+    width: 70%;
+    height: 100vh;
+    background: linear-gradient(to right, rgba(117, 203, 246, 0.6), rgba(120, 94, 237, 0.6));
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 999;
+    padding-top: 20px;
+}
+
+.sidebar.open {
+    transform: translateX(0);
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: right;
+    direction: rtl;
+}
+
+.sidebar li {
+    margin: 20px 20px;
+}
+
+.sidebar a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+@media (max-width: 1000px) {
+
+    /* .navbar {
+        width: 89%;
+        right: 2%;
+    } */
+
+    .desktop-menu {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+}

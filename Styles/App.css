@@ -1,0 +1,78 @@
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    /* animation: fadeInSlide 0.8s ease-in 1.2s forwards; */
+    /* opacity: 0; */
+    width: 99.9dvw;
+    overflow-y: auto;
+    overflow-x: hidden;
+    justify-content: center;
+    /* gap: 20px; */
+
+    background-image: url('/archweb_bg_dark.jpg');
+    background-size: cover;
+    background-attachment: fixed ;
+    z-index:0;
+    /* filter: brightness(80%); */
+    /* background-size: 200% 200%;
+    animation: gradientFlow 6s ease-in-out infinite; */
+}
+
+@keyframes gradientFlow {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+.main-segment {
+    display:flex;
+    height:auto;
+    opacity: 1;
+    width:99.9dvw;
+    outline-style: solid;
+    outline-width: 4px;
+    outline-color: rgba(255, 255, 255, 0.598);
+}
+
+
+/* .main-segment:target {
+
+    animation: fadeInSlide 0.4s ease-in 0.3s forwards
+} */
+
+@keyframes fadeInSlide {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+
+
+@media(max-width:1000px) {
+    .main-container {
+        width: 99.9dvw
+    }
+    .main-segment{
+        width:100%;
+        height:auto;   
+    }
+}

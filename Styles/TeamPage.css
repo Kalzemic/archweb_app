@@ -1,0 +1,61 @@
+
+
+
+.main-header{
+    margin-top:300px;
+}
+
+
+.team-content{
+    margin-top: 300px;
+    margin-bottom: 200px;
+}
+
+.team-page h2{
+    font-size: 40px;
+}
+
+.team-page h3{
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.team-page p{
+    font-weight: 400;
+    font-size: 20px;
+}
+
+
+
+.image-content-split{
+    
+    width: 80%;
+    margin-top: 100px;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap:200px;
+    
+}
+
+.text-content{
+    text-align: right;
+    width:40%;
+    height:400px;
+    font-size: 20px;
+    
+}
+
+
+@media(max-width:1000px){
+    .text-content{
+        text-align: center;
+        width:12rem;
+        height:50rem;
+    }
+
+    .text-image{
+        width:3rem;
+    }
+}

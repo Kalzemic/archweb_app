@@ -1,0 +1,20 @@
+[
+    {
+        "name": "minimalbody",
+        "image":"minimalbody.png",
+        "logo":"minimalbody.png",
+        "color": "#ff7b00"
+    },
+    {
+        "name": "moodlight",
+        "image":"moodlight.png",
+        "logo":"moodlight.png",
+        "color": "rgb(255, 143, 225)"
+    },
+    {
+        "name":"metro training",
+        "image":"metro-training.png",
+        "logo":"metro-training.png",
+        "color":"white"
+    }
+]

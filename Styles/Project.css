@@ -1,0 +1,28 @@
+.project-showcase-page {
+
+    /* margin-top: 130px; */
+    margin-bottom: 30px;
+
+}
+
+
+.project-showcase-image {
+    width: 25rem;
+    height: 22rem;
+    border-radius: 20px;
+    filter: blur(1px) brightness(70%);
+
+}
+
+
+@media(max-width:1000px) {
+
+    .project-showcase-page {
+        width: 99%;
+    }
+
+    .project-showcase-image {
+        width: 20rem;
+        height: 18rem;
+    }
+}

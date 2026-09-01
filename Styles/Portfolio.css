@@ -1,0 +1,99 @@
+.portfolio-page {
+
+    margin-top: 11rem;
+    margin-bottom: 11rem;
+    width: 100%;
+    /* color: rgba(46, 59, 81, 0.95);
+    height:70%; */
+    /* margin-right: 6.5%; */
+    
+}
+
+.projects-grid {
+    display: grid;
+    
+    grid-template-columns: repeat(4, 1fr);
+    /* Ensures exactly 4 columns */
+    gap: 5px;
+    padding: 10%;
+    justify-content: center;
+    align-items: center;
+   
+    overflow-y: hidden;
+    margin-top: 5px;
+    overflow-x: hidden;
+
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    height: 25rem;
+    width: 20rem;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.6);
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+    margin: 10px;
+    overflow: hidden;
+   
+    outline-style: solid;
+    outline-width: 2px;
+    outline-color: rgba(255, 255, 255, 0.3);
+    
+    
+}
+
+
+.project-card:hover img {
+    transition: transform ease-in 0.3s;
+    transform: scale(1.07)
+}
+
+.project-card-background {
+    margin-top: 0px;
+    left: 0;
+    position: absolute;
+    height: 99%;
+    width: 99%;
+    filter: blur(3px) brightness(50%);
+    border-radius: 5px;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.project-card-logo {
+    position: relative;
+    z-index: 1;
+    height: 250px;
+    width: 250px;
+    border-radius: 300px;
+    /* background-color: rgba(0, 0, 0, 0.95); */
+    width: auto;
+}
+
+
+.project-card-button {
+    margin-top: 1rem;
+    position: relative;
+    z-index: 1;
+}
+
+
+
+@media(max-width: 1000px) {
+
+    .portfolio-page {
+        height: 70%;
+        width: 100%;
+        /* margin-right: 8%; */
+    }
+
+    .projects-grid {
+        grid-template-columns: auto;
+    }
+}
