@@ -1,3 +1,4 @@
+
 import '@/Styles/App.css'
 import Navbar from "@/components/Navbar"
 import HomePage from "./Homepage"
@@ -6,9 +7,13 @@ import ServicesPage from "./ServicesPage"
 import Footer from "@/components/Footer"
 import Portfolio from "./Portfolio"
 import Contactpage from "./ContactPage"
-
+import { FaInstagram, FaWhatsapp } from 'react-icons/fa';
+import SocialMedia from './SocialMedia'
 
 export default function Home(){
+
+  
+  
   return (
     <div className="main-container">
         <Navbar />
@@ -33,6 +38,8 @@ export default function Home(){
               <section className='main-segment' id='footer'>
                 <Footer />
               </section>
+
+        <SocialMedia/>
     </div>
   )
 }

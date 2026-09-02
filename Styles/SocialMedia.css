@@ -1,0 +1,33 @@
+
+.social-media {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    z-index: 1000;
+    bottom: 2%;
+    left: 4%;
+  }
+  
+  .Whatsapp-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: #25D366;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 40px;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 15px;
+    height: 62px;
+  }
+  
+  .whatsapp-icon {
+    width: 40px;
+    height: 40px;
+  }
