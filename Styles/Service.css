@@ -1,0 +1,116 @@
+.service-page {
+    display: grid;
+    place-items: center;
+  
+    height: 100svh;
+    padding: 7rem clamp(1.5rem, 5vw, 4rem) 2rem;
+  
+    color: var(--text-dark);
+    background: var(--bg-warm);
+    overflow: hidden;
+  }
+
+  .service-layout {
+    display: grid;
+    grid-template-columns: minmax(20rem, 0.85fr) minmax(0, 1.15fr);
+    align-items: center;
+    gap: clamp(3rem, 7vw, 7rem);
+  
+    width: min(100%, 76rem);
+  }
+  
+  .service-media {
+    position: relative;
+    width: 100%;
+    max-height: 65svh;
+    aspect-ratio: 1;
+  
+    overflow: hidden;
+    border: 1px solid rgba(23, 32, 42, 0.12);
+    border-radius: 0.75rem;
+  
+    box-shadow: 0 20px 55px rgba(23, 32, 42, 0.16);
+  }
+  
+  .service-media img {
+    object-fit: cover;
+  }
+  
+  .service-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+.service-back-link {
+  margin-bottom: 1.5rem;
+  color: var(--text-muted-dark);
+  text-decoration: none;
+}
+
+.service-back-link:hover {
+    color: var(--brand-blue-strong);
+  }
+
+  .service-kicker {
+    margin: 0 0 0.75rem;
+    color: var(--brand-blue-strong);
+    font-weight: 700;
+  }
+  
+  .service-content h1 {
+    margin: 0;
+    font-size: clamp(3rem, 7vw, 6rem);
+    line-height: 0.95;
+    color: var(--text-dark);
+  }
+  
+  .service-summary {
+    max-width: 40rem;
+    margin: 1.5rem 0;
+  
+    color: var(--text-muted-dark);
+    font-size: 1.1rem;
+    line-height: 1.75;
+  }
+  
+  .service-highlights {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0;
+  
+    width: 100%;
+    margin: 0 0 2rem;
+    padding: 0;
+  
+    list-style: none;
+    border-top: 1px solid rgba(23, 32, 42, 0.18);
+  }
+  
+  .service-highlights li {
+    padding: 0.9rem 0;
+
+    color: var(--text-dark);
+    border-bottom: 1px solid rgba(23, 32, 42, 0.18);
+  }
+
+  @media (max-width: 800px) {
+    .service-page {
+      height: auto;
+      min-height: 100svh;
+      overflow: visible;
+    }
+  
+    .service-layout {
+      grid-template-columns: 1fr;
+    }
+  
+    .service-media {
+      width: min(100%, 28rem);
+      margin-inline: auto;
+    }
+  
+    .service-highlights {
+      grid-template-columns: 1fr;
+    }
+  }

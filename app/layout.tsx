@@ -1,28 +1,30 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono,  Fraunces, Inter  } from "next/font/google";
+import { Heebo,  Zilla_Slab } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+const heebo = Heebo({
+  subsets: ["hebrew", "latin"],
+  variable: "--font-body",
+  display: "swap",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+// const fraunces = Fraunces({
+//   subsets: ["latin"],
+//   variable: "--font-display",
+//   display: "swap",
+// });
+
+const zillaSlab = Zilla_Slab({
   subsets: ["latin"],
+  weight: ["500", "600", "700"],
+  variable: "--font-display",
+  display: "swap",
 });
 
-const fraunces = Fraunces({
-  subsets: ["latin"],
-});
-
-const inter = Inter({
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
-  title: "Archweb",
-  description: "Your new home for all web applications",
+  title: "ArchWeb",
+  description: "פיתוח אתרים, אפליקציות ופתרונות תוכנה",
 };
 
 export default function RootLayout({
@@ -32,9 +34,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="he" dir="rtl">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={`${heebo.variable} ${zillaSlab.variable}`}>
         {children}
       </body>
     </html>

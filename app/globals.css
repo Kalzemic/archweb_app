@@ -1,7 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
 
 :root {
-  font-family: 'Secular One';
   line-height: 1.5;
   font-weight: 400;
 
@@ -15,6 +13,63 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   scroll-behavior: smooth;
+
+  --bg-primary: #070b12;
+  --bg-secondary: #0b2239;
+  --bg-light: #edf2f5;
+  --bg-warm: #f3f0e8;
+  --bg-footer: #03060a;
+
+  --text-light: #f5f7fa;
+  --text-dark: #111827;
+  --text-muted-light: #a9b4c3;
+  --text-muted-dark: #526071;
+
+  --bg-primary: #070b12;
+  --bg-secondary: #0b2239;
+
+  --bg-warm: #f3f0e8;
+  --bg-warm-muted: #e7e0d5;
+
+  --bg-footer: #03060a;
+
+  --text-light: #f5f7fa;
+  --text-dark: #17202a;
+
+  --brand-blue: #3ba7d6;
+  --brand-blue-strong: #167fae;
+
+  --button-bg: rgba(31, 126, 168, 0.3);
+  --button-bg-hover: rgba(38, 153, 202, 0.48);
+  --button-border: rgba(103, 200, 239, 0.48);
+  --button-shadow: rgba(26, 145, 197, 0.2);
+
+  --font-size-body: 1rem;
+  --font-size-small: 0.9rem;
+  --font-size-heading: clamp(2.5rem, 5vw, 4.5rem);
+
+  --line-height-body: 1.7;
+  --line-height-heading: 1.05;
+  --button-primary-bg: #167fae;
+  --button-primary-hover: #0f6d98;
+  --button-primary-text: #ffffff;
+  --button-primary-border: rgba(10, 75, 105, 0.3);
+  --button-primary-shadow: rgba(22, 127, 174, 0.25);
+
+  --services-list-bg: #12344f;
+  --services-list-hover: #173e5d;
+  --services-list-border: rgba(123, 194, 226, 0.22);
+
+  --form-bg: var(--bg-warm);
+  --form-text: var(--text-dark);
+  --input-bg: #fffdfa;
+  --input-border: #c9c1b6;
+  --input-focus: var(--brand-blue-strong);
+
+  --navbar-bg-start: rgba(21, 112, 151, 0.96);
+  --navbar-bg-end: rgba(40, 78, 137, 0.96);
+  --navbar-border: rgba(255, 255, 255, 0.2);
+
 }
 
 input {
@@ -34,30 +89,31 @@ a {
   text-decoration: inherit;
 }
 
-a:hover {
-  transition: transform 0.3s ease;
-  transform: scale(1.1);
-}
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
   min-width: 320px;
   min-height: 100vh;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-body), sans-serif;
+  font-weight: 100;
 }
-h1, h2 {
-  font-family: "Fraunces", serif;
-  font-weight: 600;
+
+.english-display {
+  font-family: var(--font-display), serif;
+  font-weight: 100;
+  line-height: var(--line-height-heading);
 }
 
 body {
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-body), sans-serif;
+  font-size: var(--font-size-body);
+  line-height: var(--line-height-body);
 }
 button {
   border-radius: 8px;
@@ -80,6 +136,50 @@ button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
+
+.button-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 3.25rem;
+  padding: 0.8rem 1.5rem;
+
+  color: var(--button-primary-text);
+  background: var(--button-primary-bg);
+
+  border: 1px solid var(--button-primary-border);
+  border-radius: 0.75rem;
+
+  font-family: var(--font-body), sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  text-decoration: none;
+
+  box-shadow: 0 10px 25px var(--button-primary-shadow);
+
+  transition:
+    background-color 180ms ease,
+    box-shadow 180ms ease,
+    transform 180ms ease;
+}
+
+.button-primary:hover {
+  color: var(--button-primary-text);
+  background: var(--button-primary-hover);
+  box-shadow: 0 14px 32px rgba(22, 127, 174, 0.34);
+  transform: translateY(-2px);
+}
+
+.button-primary:active {
+  transform: translateY(0);
+}
+
+.button-primary:focus-visible {
+  outline: 3px solid rgba(22, 127, 174, 0.35);
+  outline-offset: 4px;
+}
+
 
 @media (prefers-color-scheme: light) {
   :root {

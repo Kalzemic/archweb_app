@@ -1,39 +1,64 @@
+import Link from "next/link";
 import "@/Styles/Footer.css";
 
-const Footer = () => {
-    return (
-        <footer className="footer">
-            <div className="footer-content">
-                <div className="footer-left">
-                    <h3>ArchWeb</h3>
-                    <p>Building high-performance web applications for modern businesses.</p>
-                </div>
+const footerNavigation = [
+  { href: "/#homepage", label: "דף הבית" },
+  { href: "/#about", label: "קצת עלינו" },
+  { href: "/#services", label: "השירותים שלנו" },
+  { href: "/#portfolio", label: "הפרויקטים שלנו" },
+];
 
-                <div className="footer-links">
-                    <h4>Explore</h4>
-                    <ul>
-                        <li><a href="/#homepage">Home</a></li>
-                        <li><a href="/#about">About</a></li>
-                        <li><a href="/#portfolio">Portfolio</a></li>
-                        <li><a href="/#contact">Contact</a></li>
-                    </ul>
-                </div>
+export default function Footer() {
+  return (
+    <footer className="footer">
+      <div className="footer-content">
+        <div className="footer-brand">
+          <Link
+            href="/#homepage"
+            className="footer-logo english-display"
+          >
+            ArchWeb
+          </Link>
 
-                <div className="footer-socials">
-                    <h4>Follow us</h4>
-                    <div className="social-icons">
-                        <a href="https://instagram.com" target="_blank" rel="noreferrer"><i className="fab fa-instagram"></i></a>
-                        <a href="https://linkedin.com" target="_blank" rel="noreferrer"><i className="fab fa-linkedin"></i></a>
-                        <a href="https://github.com" target="_blank" rel="noreferrer"><i className="fab fa-github"></i></a>
-                    </div>
-                </div>
-            </div>
+          <p>
+            פיתוח מוצרים דיגיטליים בהתאמה לעסק, למשתמשים
+            ולמטרות הפרויקט.
+          </p>
+        </div>
 
-            <div className="footer-bottom">
-                <p>© {new Date().getFullYear()} ArchWeb. All rights reserved.</p>
-            </div>
-        </footer>
-    );
-};
+        <nav className="footer-navigation" aria-label="ניווט תחתון">
+          <h2>ניווט</h2>
 
-export default Footer;
+          <ul>
+            {footerNavigation.map((item) => (
+              <li key={item.href}>
+                <Link href={item.href}>
+                  {item.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </nav>
+
+        <div className="footer-contact">
+          <h2>יש לכם פרויקט?</h2>
+
+          <p>
+            ספרו לנו מה אתם רוצים לבנות ונבחן יחד את הדרך
+            המתאימה להתחיל.
+          </p>
+
+          <Link href="/#contact" className="footer-contact-link">
+            צרו קשר
+          </Link>
+        </div>
+      </div>
+
+      <div className="footer-bottom">
+        <p>
+          © {new Date().getFullYear()} ArchWeb. כל הזכויות שמורות.
+        </p>
+      </div>
+    </footer>
+  );
+}

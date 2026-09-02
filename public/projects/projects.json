@@ -1,20 +1,23 @@
 [
     {
-        "name": "minimalbody",
-        "image":"minimalbody.png",
-        "logo":"minimalbody.png",
-        "color": "#ff7b00"
+      "name": "minimalbody",
+      "displayName": "Minimal Body",
+      "image": "minimalbody.png",
+      "logo": "minimalbody.png",
+      "color": "#ff7b00"
     },
     {
-        "name": "moodlight",
-        "image":"moodlight.png",
-        "logo":"moodlight.png",
-        "color": "rgb(255, 143, 225)"
+      "name": "moodlight",
+      "displayName": "Mood Light",
+      "image": "moodlight.png",
+      "logo": "moodlight.png",
+      "color": "rgb(255, 143, 225)"
     },
     {
-        "name":"metro training",
-        "image":"",
-        "logo":"metro-training.png",
-        "color":"white"
+      "name": "metro training",
+      "displayName": "Metro Training",
+      "image": "",
+      "logo": "metro-training.png",
+      "color": "white"
     }
-]
+  ]

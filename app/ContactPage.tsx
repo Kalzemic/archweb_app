@@ -11,7 +11,7 @@ export default function Contactpage() {
     const [email, setEmail] = useState("")
     const [text, setText] = useState("")
 
-    const handleSumbit = async (e: React.FormEvent) => {
+    const handleSubmit = async (e: React.FormEvent) => {
 
         
         e.preventDefault()
@@ -41,78 +41,85 @@ export default function Contactpage() {
 
    
     return (
-        <div className='contact-page'>
-            <div className='contact-title'>
-                <h1>דברו איתנו</h1>
+        <div className="contact-page">
+          <div className="contact-copy">
+            <p className="contact-kicker">צרו קשר</p>
+      
+            <h2 className="english-display">
+              Start a Project
+            </h2>
+      
+            <p>
+              ספרו לנו מה אתם רוצים לבנות, איזו בעיה אתם מנסים לפתור
+              ומה חשוב לכם בתהליך. נחזור אליכם כדי להבין את הפרויקט
+              ולבחון את הדרך המתאימה לפתח אותו.
+            </p>
+          </div>
+      
+          <form
+            className="contact-form"
+            onSubmit={handleSubmit}
+            aria-label="טופס יצירת קשר"
+          >
+            <div className="form-field">
+              <label htmlFor="name">שם</label>
+      
+              <input
+                id="name"
+                name="name"
+                type="text"
+                value={name}
+                autoComplete="name"
+                required
+                onChange={(event) => setName(event.target.value)}
+              />
             </div>
-            <form className='contact-form' onSubmit={handleSumbit}>
-                <div className='contact-segment'>
-                    <label htmlFor='shem'>שם:</label>
-                    <input
-                        value={name}
-                        size={25}
-                        onChange={(e) => setName(e.target.value)}
-                        id='shem' type='text' />
-                </div>
-                <div className='contact-segment'>
-                    <label htmlFor='phone'>טלפון: </label>
-                    <input
-                        value={phone}
-                        size={25}
-                        onChange={(e) => setPhone(e.target.value)}
-                        id='phone' type='text' />
-                </div>
-                <div className='contact-segment'>
-                    <label htmlFor='email'>מייל:</label>
-                    <input
-                        value={email}
-                        onChange={(e) => setEmail(e.target.value)}
-                        id='email' size={25} type='text' />
-                </div>
-                <div className='contact-segment'>
-                    <label htmlFor='body'> פרטים נוספים: </label>
-                    <textarea
-                        id='body'
-                        value={text}
-                        onChange={(e) => setText(e.target.value)}
-                        rows={10}
-                        cols={30}
-                        className='contact-textarea'
-                    />
-                </div>
-                <div className='contact-segment'>
-                    <motion.button
-                        initial={{
-                            boxShadow: "0 0 10px rgba(0, 195, 255, 0.9)",
-                            background:
-                                "linear-gradient(to right, rgba(246, 192, 117, 0.6), rgba(196, 94, 237, 0.6))",
-                            backgroundSize: "200% 200%",
-                        }}
-                        animate={{
-                            backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"],
-                        }}
-
-                        whileHover={{
-                            boxShadow: [
-                                "0 0 10px rgba(0, 195, 255, 0.9)",
-                                "0 0 20px rgba(0, 195, 255, 0.9)",
-                                "0 0 30px rgba(0, 195, 255, 0.9)",
-                                "0 0 20px rgba(0, 195, 255, 0.9)",
-                                "0 0 10px rgba(0, 195, 255, 0.9)"
-
-                            ]
-                        }}
-                        transition={{
-                            duration: 3,
-                            repeat: Infinity,
-                            ease: "easeIn",
-                        }}
-
-
-                        className='submit-button' type='submit'>שליחה</motion.button>
-                </div>
-
-            </form>
+      
+            <div className="form-field">
+              <label htmlFor="phone">טלפון</label>
+      
+              <input
+                id="phone"
+                name="phone"
+                type="tel"
+                value={phone}
+                autoComplete="tel"
+                inputMode="tel"
+                required
+                onChange={(event) => setPhone(event.target.value)}
+              />
+            </div>
+      
+            <div className="form-field">
+              <label htmlFor="email">אימייל</label>
+      
+              <input
+                id="email"
+                name="email"
+                type="email"
+                value={email}
+                autoComplete="email"
+                required
+                onChange={(event) => setEmail(event.target.value)}
+              />
+            </div>
+      
+            <div className="form-field">
+              <label htmlFor="message">ספרו לנו על הפרויקט</label>
+      
+              <textarea
+                id="message"
+                name="message"
+                value={text}
+                rows={6}
+                onChange={(event) => setText(event.target.value)}
+              />
+            </div>
+      
+            <button className="button-primary contact-submit" type="submit">
+              שליחת הפרטים
+            </button>
+          </form>
         </div>
     );
 }
