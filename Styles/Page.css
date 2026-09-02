@@ -3,3 +3,10 @@
     transition: opacity 1.2s ease-out, transform 1.2s ease-out;
     width:100%;
 }
+
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: clip;
+}
