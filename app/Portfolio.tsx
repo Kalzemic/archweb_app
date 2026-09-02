@@ -17,8 +17,10 @@ export default function Portfolio() {
                     const logopath = `/projects/logos/${project.logo}`
                     return (
                         <div className='project-card' key={index}>
-
+                            {project.image != ''?    
                             <img className='project-card-background' src={imagepath} alt={`${project.name} project image`} />
+                            :<></>
+                            }
                             <img className='project-card-logo' src={logopath} alt={`${project.name} logo image`} />
                             <button className='project-card-button'
                                 aria-label={''}

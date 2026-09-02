@@ -38,7 +38,7 @@ function Navbar() {
                             <li><a aria-label='button to homepage' href="/#homepage">דף הבית</a></li>
                             <li><a aria-label='button to about-page' href="/#about">קצת עלינו</a></li>
                             <li><a aria-label='button to services page' href="/#services">השירותים שלנו</a></li>
-                            <li><a aria-label='button to portfolio' href="/#portfolio">הפרויקטים שלנו</a></li>
+                            <li><a aria-label='button to portfolio' href="/#portfolio">הלקוחות שלנו</a></li>
                             <li aria-label='button to contact form' className="contact-button"><a href="/#contact">צרו קשר</a></li>
                         </ul>
                     </div>
@@ -60,7 +60,7 @@ function Navbar() {
                 <li><a aria-label='button to homepage' href="/#homepage">דף הבית</a></li>
                             <li><a aria-label='button to about-page' href="/#about">קצת עלינו</a></li>
                             <li><a aria-label='button to services page' href="/#services">השירותים שלנו</a></li>
-                            <li><a aria-label='button to portfolio' href="/#portfolio">הפרויקטים שלנו</a></li>
+                            <li><a aria-label='button to portfolio' href="/#portfolio">הלקוחות שלנו</a></li>
                             <li aria-label='button to contact form' className="contact-button"><a href="/#contact">צרו קשר</a></li>
                 </ul>
             </div>

@@ -4,6 +4,7 @@
     flex-direction: row;
     height: 70%;
     width: 100%;
+    /* align-items: center; */
     /* margin-right: 6.5%; */
     
     /* border-radius: 20px; */
@@ -43,8 +44,8 @@
     text-align: center;
     align-items: center;
     justify-content: center;
-    width: 50%;
-    font-weight: 800;
+    width: 80%;
+    /* font-weight: 800; */
     font-size:large;
     /* height: 30rem; */
 }
@@ -55,6 +56,8 @@
 
 .about-text h1{
     margin-top: 12rem;
+    font-size: 30px;
+    /* font-weight: 900; */
 }
 
 .team-button {
@@ -73,21 +76,26 @@
         align-items: center;
         justify-content: center;
         margin-top: 3rem;
-        height: 80%;
+        height: 90%;
         width: 85dvw;
         padding: 20px;
         /* margin-right: 4.5%; */
     }
-
-
-    .about-image-container{
-        display:none;
+    .about-text{
+        width:99%;
     }
-    .about-img {
-        display: none;
+    .about-text h1{
+        font-size: 24px;
+    }
+    .about-image-container{
+        width:90vw;
+    }
+    .about-video {
+        width:90%;
+        height:90%;
         border-radius: 20px;
-        width: 13rem;
-        height: 13rem;
+        /* width: 13rem;
+        height: 13rem; */
 
 
     }

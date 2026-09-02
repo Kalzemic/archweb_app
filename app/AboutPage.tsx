@@ -18,11 +18,11 @@ export default function AboutPage() {
 
         <div className='about-body'>
             <div className='about-video-container'>
-                <video className='about-video' src="/about/about_small.mp4" autoPlay muted loop playsInline/>
+                <video className='about-video' src="/about/about_small.mp4" controls />
             </div>
             <div className='about-text'>
-                <h1  style={{fontSize:'30px', fontWeight:'900'}}>אפליקציות | סטארט-אפים | אתרים | AI | תשתיות Cloud </h1>
-                <h2 style={{fontSize:'60px', fontWeight:'900'}}>הכל מתחיל ברעיון</h2>
+                <h1  >אפליקציות | סטארט-אפים | אתרים | AI | תשתיות Cloud </h1>
+                <h2 style={{fontSize:'60px', fontWeight:'900'}}>It All Starts With an Idea</h2>
                 <h3>צוות מוסמך של מפתחי תוכנה המתמחים בתחום פיתוח הרשת שדואג להעניק לכם את המוצר שתמיד חלמתם עליו!</h3>
                 <h3>
                     בין אם זו אפליקציית רשת, דף נחיתה, אתר אינטראקטיבי או כל רעיון שרציתם להפוך למציאות AI.

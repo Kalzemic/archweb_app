@@ -21,7 +21,7 @@ const HomePage = () => {
 
 
         <div className='hero-page'>
-            <video className='hero-video' src='/hero/archweb-hero-web.mp4' autoPlay loop muted playsInline />
+            <video className='hero-video' src='/hero/archweb-hero-web-8bit.mp4' autoPlay loop muted playsInline />
             <div className='hero-img-container'>
                 <img src='/archweb_logo.PNG' alt='archweb logo' className='hero-img' />
             </div>
