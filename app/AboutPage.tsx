@@ -19,14 +19,14 @@ export default function AboutPage() {
 
         <div className="about-body">
   <div className="about-text">
-    <p className="about-kicker">
-      אפליקציות · סטארט־אפים · אתרים · AI · תשתיות ענן
-    </p>
+    
 
     <h2 className="english-display">
       It All Starts With an Idea
     </h2>
-
+    <p className="about-kicker">
+      אפליקציות · סטארט־אפים · אתרים · AI · תשתיות ענן
+    </p>
     <p>
     פיתוח מוצר דיגיטלי הוא הרבה יותר מכתיבת קוד. התהליך מתחיל בהבנת העסק, קהל היעד והבעיה שהמוצר צריך לפתור. משם עוברים לאפיון, עיצוב חוויית המשתמש, בחירת הטכנולוגיות, פיתוח, בדיקות והעלאה לאוויר.
     </p>

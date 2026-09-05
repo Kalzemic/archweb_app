@@ -13,9 +13,7 @@ export default function Portfolio() {
       dir="rtl"
     >
       <header className="portfolio-header">
-        <p className="portfolio-kicker">
-          הפרויקטים שלנו
-        </p>
+
 
         <h2
           className="english-display"
@@ -23,7 +21,9 @@ export default function Portfolio() {
         >
           Selected Work
         </h2>
-
+        <p className="portfolio-kicker">
+          הפרויקטים שלנו
+        </p>
         <p>
           מבחר מוצרים ואתרים שפיתחנו עבור עסקים
           בתחומים שונים, משלב הרעיון ועד למוצר פעיל.

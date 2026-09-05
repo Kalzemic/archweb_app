@@ -41,11 +41,11 @@ export default function ServicesPage() {
   return (
     <div className="services-page">
       <header className="services-header">
-        <p className="services-kicker">השירותים שלנו</p>
-
+       
   <h2 className="english-display">
     What We Build
   </h2>
+  <p className="services-kicker">השירותים שלנו</p>
 
   <p className="services-introduction">
     אנחנו מתכננים ומפתחים מוצרים דיגיטליים בהתאם למטרות,

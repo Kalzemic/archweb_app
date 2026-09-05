@@ -43,12 +43,12 @@ export default function Contactpage() {
     return (
         <div className="contact-page">
           <div className="contact-copy">
-            <p className="contact-kicker">צרו קשר</p>
+           
       
             <h2 className="english-display">
               Start a Project
             </h2>
-      
+            <p className="contact-kicker">צרו קשר</p>
             <p>
               ספרו לנו מה אתם רוצים לבנות, איזו בעיה אתם מנסים לפתור
               ומה חשוב לכם בתהליך. נחזור אליכם כדי להבין את הפרויקט
