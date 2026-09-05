@@ -71,12 +71,12 @@ export default async function ServicePage({
         חזרה לשירותים
       </Link>
 
-      <p className="service-kicker">{service.name}</p>
+      
 
       <h1 className="english-display">
         {service.englishName}
       </h1>
-
+      <p className="service-kicker">{service.name}</p>
       <p className="service-summary">
         {service.overview}
       </p>

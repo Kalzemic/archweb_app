@@ -59,9 +59,9 @@ export default async function ProjectPage({
               חזרה לפרויקטים
             </Link>
 
-            <p className="project-detail__category">
+            {/* <p className="project-detail__category">
               {project.category}
-            </p>
+            </p> */}
 
             <div className="project-detail__heading">
               <h1
@@ -99,8 +99,8 @@ export default async function ProjectPage({
                 sizes="(max-width: 768px) 100vw, 864px"
                 priority
               />
+              
             </div>
-
             <div className="project-detail__overview">
               <div>
                 <p className="project-detail__kicker">

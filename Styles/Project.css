@@ -5,7 +5,7 @@
   }
   
   .project-detail__container {
-    width: min(100% - 2rem, 72rem);
+    width: min(100% - 2rem, 62rem);
     margin-inline: auto;
   }
   

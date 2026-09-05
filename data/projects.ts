@@ -7,6 +7,7 @@ export type Project = {
     services: string[];
     image: string | null;
     logo: string;
+    link : string | null;
     imageFit: "cover" | "contain";
     accentColor: string;
   };
@@ -34,6 +35,7 @@ export type Project = {
   
       image: "/projects/images/minimalbody.png",
       logo: "/projects/logos/minimalbody.png",
+      link: "www.minimalbody.co.il",
       imageFit: "cover",
   
       accentColor: "#ff7b00",
@@ -61,6 +63,7 @@ export type Project = {
   
       image: "/projects/images/moodlight.png",
       logo: "/projects/logos/moodlight.png",
+      link: "www.moodlight.co.il",
       imageFit: "cover",
   
       accentColor: "#ff8fe1",
@@ -86,6 +89,7 @@ export type Project = {
       ],
       image: null,
       logo: "/projects/logos/metro-training.png",
+      link: null,
       imageFit: "contain",
   
       accentColor: "#f5f7fa",
